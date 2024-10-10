@@ -8,7 +8,7 @@ import DentistImage2 from '../../assets/dentist/TomasDentist.png'
 import DentistImage3 from '../../assets/dentist/TimDentist.png'
 import DentistImage4 from '../../assets/dentist/SueDentist.png'
 
-export default function Dentist() {
+export default function AboutDentist() {
     const scrollRef = useRef(null);
 
     const [isAtStart, setIsAtStart] = useState(true);
@@ -18,8 +18,13 @@ export default function Dentist() {
     const checkScrollPosition = () => {
         if (scrollRef.current) {
             const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+            
+            // Add a small threshold (1px) for more reliable end detection
+            const isEnd = Math.abs(scrollWidth - (scrollLeft + clientWidth)) <= 1;
+            
             setIsAtStart(scrollLeft <= 0);
-            setIsAtEnd(Math.ceil(scrollLeft + clientWidth) >= scrollWidth);
+            // setIsAtEnd(Math.ceil(scrollLeft + clientWidth) >= scrollWidth);
+            setIsAtEnd(isEnd);
         }
     };
 

@@ -1,6 +1,6 @@
 // import { useState } from 'react'
-import Dentist from './components/hero/tailwind/Dentist.jsx'
-import AboutDentist from './components/about/Dentist.jsx'
+import HeroDentist from './components/hero/HeroDentist.jsx'
+import AboutDentist from './components/about/AboutDentist.jsx'
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
         gap-20
       '
     >
-      <Dentist />
+      <HeroDentist />
 
       <AboutDentist />
 

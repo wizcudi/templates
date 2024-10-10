@@ -1,7 +1,7 @@
 import React from 'react'
-import DentistImage from '../../../assets/dentist/AmyDentist.png'
+import DentistImage from '../../assets/dentist/AmyDentist.png'
 
-export default function Dentist() {
+export default function HeroDentist() {
     return (
         <div
 
