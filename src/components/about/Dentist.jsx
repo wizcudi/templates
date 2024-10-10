@@ -39,25 +39,7 @@ export default function Dentist() {
         };
     }, []);
 
-    // Function to scroll left
-    const scrollLeft = () => {
-        if (scrollRef.current && !isAtStart) {
-            scrollRef.current.scrollBy({
-                left: -300, // Adjust the scroll distance as needed
-                behavior: 'smooth'
-            });
-        }
-    };
-
-    // Function to scroll right
-    const scrollRight = () => {
-        if (scrollRef.current && !isAtEnd) {
-            scrollRef.current.scrollBy({
-                left: 300, // Adjust the scroll distance as needed
-                behavior: 'smooth'
-            });
-        }
-    };
+    
 
     return (
         <div
@@ -87,7 +69,6 @@ export default function Dentist() {
             <div className='relative'>
 
                 {!isAtStart && (<button
-                    onClick={scrollLeft}
                     className='
                         absolute
                         left-0
@@ -151,7 +132,6 @@ export default function Dentist() {
                 </div>
 
                 {!isAtEnd && (<button
-                    onClick={scrollRight}
                     className='
                         absolute
                         right-0
