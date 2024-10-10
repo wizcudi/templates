@@ -26,8 +26,21 @@ export default function Dentist() {
     // Add scroll event listener
     useEffect(() => {
         const scrollContainer = scrollRef.current;
+
+        // Check position after images load
+        const handleLoad = () => {
+            checkScrollPosition();
+        };
+
         if (scrollContainer) {
             scrollContainer.addEventListener('scroll', checkScrollPosition);
+            
+            // Add load event listeners to all images
+            const images = scrollContainer.getElementsByTagName('img');
+            Array.from(images).forEach(img => {
+                img.addEventListener('load', handleLoad);
+            })
+
             // Initial check
             checkScrollPosition();
 
@@ -36,6 +49,11 @@ export default function Dentist() {
         return () => {
             if (scrollContainer) {
                 scrollContainer.removeEventListener('scroll', checkScrollPosition);
+
+                const images = scrollContainer.getElementsByTagName('img');
+                Array.from(images).forEach(img => {
+                    img.removeEventListener('load', handleLoad);
+                });
             }
         };
     }, []);
