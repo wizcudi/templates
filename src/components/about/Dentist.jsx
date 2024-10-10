@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 import DentistImage1 from '../../assets/dentist/SaraDentist.png'
@@ -11,9 +11,37 @@ import DentistImage4 from '../../assets/dentist/SueDentist.png'
 export default function Dentist() {
     const scrollRef = useRef(null);
 
+    const [isAtStart, setIsAtStart] = useState(true);
+    const [isAtEnd, setIsAtEnd] = useState(false);
+
+    // Check scroll position
+    const checkScrollPosition = () => {
+        if (scrollRef.current) {
+            const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+            setIsAtStart(scrollLeft <= 0);
+            setIsAtEnd(Math.ceil(scrollLeft + clientWidth) >= scrollWidth);
+        }
+    };
+
+    // Add scroll event listener
+    useEffect(() => {
+        const scrollContainer = scrollRef.current;
+        if (scrollContainer) {
+            scrollContainer.addEventListener('scroll', checkScrollPosition);
+            // Initial check
+            checkScrollPosition();
+        }
+
+        return () => {
+            if (scrollContainer) {
+                scrollContainer.removeEventListener('scroll', checkScrollPosition);
+            }
+        };
+    }, []);
+
     // Function to scroll left
     const scrollLeft = () => {
-        if (scrollRef.current) {
+        if (scrollRef.current && !isAtStart) {
             scrollRef.current.scrollBy({
                 left: -300, // Adjust the scroll distance as needed
                 behavior: 'smooth'
@@ -23,7 +51,7 @@ export default function Dentist() {
 
     // Function to scroll right
     const scrollRight = () => {
-        if (scrollRef.current) {
+        if (scrollRef.current && !isAtEnd) {
             scrollRef.current.scrollBy({
                 left: 300, // Adjust the scroll distance as needed
                 behavior: 'smooth'
@@ -58,10 +86,9 @@ export default function Dentist() {
 
             <div className='relative'>
 
-                <button
+                {!isAtStart && (<button
                     onClick={scrollLeft}
                     className='
-
                         absolute
                         left-0
                         top-1/2
@@ -74,7 +101,7 @@ export default function Dentist() {
                     '
                 >
                     <FaChevronLeft />
-                </button>
+                </button>)}
 
                 <div
                     ref={scrollRef}
@@ -123,7 +150,7 @@ export default function Dentist() {
                     />
                 </div>
 
-                <button
+                {!isAtEnd && (<button
                     onClick={scrollRight}
                     className='
                         absolute
@@ -140,7 +167,7 @@ export default function Dentist() {
                     '
                 >
                     <FaChevronRight />
-                </button>
+                </button>)}
 
             </div>
 
