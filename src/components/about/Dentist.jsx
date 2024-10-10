@@ -30,6 +30,7 @@ export default function Dentist() {
             scrollContainer.addEventListener('scroll', checkScrollPosition);
             // Initial check
             checkScrollPosition();
+
         }
 
         return () => {
@@ -68,21 +69,23 @@ export default function Dentist() {
 
             <div className='relative'>
 
-                {!isAtStart && (<button
-                    className='
-                        absolute
-                        left-0
-                        top-1/2
-                        bg-black/40
-                        text-white 
-                        p-2
-                        rounded-full
-                        z-10
-                        -ml-5
-                    '
-                >
-                    <FaChevronLeft />
-                </button>)}
+                {!isAtStart && (
+                    <button
+                        className='
+                            absolute
+                            left-0
+                            top-1/2
+                            bg-black/40
+                            text-white 
+                            p-2
+                            rounded-full
+                            z-10
+                            -ml-5
+                        '
+                    >
+                        <FaChevronLeft />
+                    </button>
+                )}
 
                 <div
                     ref={scrollRef}
@@ -106,12 +109,12 @@ export default function Dentist() {
                         '
                     />
                     <img 
-                    src={DentistImage2} 
-                    alt="Sara the Dentist"
-                    className='
-                        object-cover
-                        rounded-lg
-                    ' 
+                        src={DentistImage2} 
+                        alt="Sara the Dentist"
+                        className='
+                            object-cover
+                            rounded-lg
+                        ' 
                     />
                     <img
                         src={DentistImage3} 
@@ -131,23 +134,25 @@ export default function Dentist() {
                     />
                 </div>
 
-                {!isAtEnd && (<button
-                    className='
-                        absolute
-                        right-0
-                        
+                {!isAtEnd && (
+                    <button
+                        className='
+                            absolute
+                            right-0
+                            
 
-                        top-1/2
-                        bg-black/40
-                        text-white 
-                        p-2
-                        rounded-full
-                        z-10
-                        -mr-5
-                    '
-                >
-                    <FaChevronRight />
-                </button>)}
+                            top-1/2
+                            bg-black/40
+                            text-white 
+                            p-2
+                            rounded-full
+                            z-10
+                            -mr-5
+                        '
+                    >
+                        <FaChevronRight />
+                    </button>
+                )}
 
             </div>
 
