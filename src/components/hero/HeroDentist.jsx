@@ -32,6 +32,7 @@ export default function HeroDentist() {
                 <h1
                     className='
                         font-bold
+                        
                         md:text-6xl
                         max-nine-hundred:text-5xl
                         max-seven-hundred:text-6xl
