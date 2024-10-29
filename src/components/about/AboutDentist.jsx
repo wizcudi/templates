@@ -1,5 +1,6 @@
 import React from 'react'
-import CarolLandscape from '../../assets/caroldental/CarolLandscape.png' 
+// import CarolLandscape from '../../assets/caroldental/CarolLandscape.png'
+import CarolLong from '../../assets/caroldental/CarolLandscape.png'
 
 export default function AboutDentist() {
     
@@ -47,7 +48,7 @@ export default function AboutDentist() {
                     className='
                         m-auto
                     '
-                    src={CarolLandscape} alt="Carol in Office" 
+                    src={CarolLong} alt="Carol in Office" 
                 />
                 <ol className='
 
