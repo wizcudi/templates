@@ -65,6 +65,7 @@ function App() {
               ${isOpen ? 'flex ' : 'hidden'}
             `}
           >
+
             <Link 
               to="/" 
               className="
@@ -72,17 +73,17 @@ function App() {
                 border-white
               "
             >
-              Carol Website
+              Dai Website
             </Link>
-            
+
             <Link 
-              to="/dai" 
+              to="/carol" 
               className="
                 border-b
                 border-white
               "
             >
-              Dai Website
+              Carol Website
             </Link>
 
           </div>
