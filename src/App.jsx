@@ -18,31 +18,51 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} /> */}
         </Routes>
         
-        {/* <nav className="
+        <nav className="
             p-4 
-            bg-teal-800 
+            bg-stone-600
             text-white 
             text-lg
+            font-semibold
+            mt-4
         ">
+          
             <div className="
                 max-w-4xl 
                 mx-auto 
-                flex 
-                items-center
-                justify-between
-                gap-7
+                flex
+                flex-col
+                gap-2
             ">
-                <Link 
-                    to="/" 
-                    className="
-                        
-                    "
-                >
-                    Carol
-                </Link>
-                
+                <h2 >Website Template made by thankyouamour</h2>
+
+                <div className="
+                  flex
+                  
+                  
+                  gap-4
+                ">
+
+                  <Link 
+                      to="/" 
+                      className="
+                        border-b-2 border-white
+                      "
+                  >
+                      Carol Website
+                  </Link>
+                  <Link 
+                      to="/dai" 
+                      className="
+                        border-b-2 border-white
+                      "
+                  >
+                      Dai Website
+                  </Link>
+
+                </div>
             </div>
-        </nav> */}
+        </nav>
 
       </div>
     </BrowserRouter>
