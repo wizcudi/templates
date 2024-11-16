@@ -2,7 +2,7 @@ import React from 'react'
 import CarolWorking from '../../assets/caroldental/CarolWorking.png'
 import CarolAssest1 from '../../assets/caroldental/CarolAssest1.png'
 
-export default function CTADentist() {
+export default function CarolCTA() {
     return (
         <div className='
             flex

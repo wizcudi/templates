@@ -2,11 +2,9 @@ import React from 'react'
 import CarolBackground from '../../assets/caroldental/CarolBackground.png'
 
 
-export default function Background() {
+export default function CarolBanner() {
     return (
         <div className='
-            
-            
             border-b-2
             border-brand-purple
         '>

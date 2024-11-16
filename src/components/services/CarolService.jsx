@@ -3,7 +3,7 @@ import DentalSurgery from '../../assets/caroldental/DentalSurgery.png'
 import DentalCosmitic from '../../assets/caroldental/DentalCosmitic.png'
 import DentalGenral from '../../assets/caroldental/DentalGenral.png'
 
-export default function ServiceDentist() {
+export default function CarolService() {
     return (
         <div className='
             flex

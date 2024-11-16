@@ -1,7 +1,7 @@
 import React from 'react'
 import Quotes from '../../assets/caroldental/quotes.png'
 
-export default function CarolDentistTestimonial() {
+export default function CarolTestimonial() {
     return (
         <div className='
             bg-brand-purple

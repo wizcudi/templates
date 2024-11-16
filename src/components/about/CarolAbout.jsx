@@ -2,7 +2,7 @@ import React from 'react'
 import carolbanner from '../../assets/caroldental/carolbanner.png'
 
 
-export default function AboutDentist() {
+export default function CarolAbout() {
     
 
     return (

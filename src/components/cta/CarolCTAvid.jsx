@@ -2,7 +2,7 @@ import React from 'react'
 import CarolAssest1 from '../../assets/caroldental/CarolAssest1.png'
 import CarolDentistVid from '../../assets/caroldental/CarolDentistVid.mp4'
 
-export default function CTADentistVid() {
+export default function CarolCTAvid() {
     return (
         <div className='
            
