@@ -18,7 +18,7 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} /> */}
         </Routes>
         
-        <nav className="
+        {/* <nav className="
             p-4 
             bg-stone-600
             text-white 
@@ -62,7 +62,7 @@ function App() {
 
                 </div>
             </div>
-        </nav>
+        </nav> */}
 
       </div>
     </BrowserRouter>
