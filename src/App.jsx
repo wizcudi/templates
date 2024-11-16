@@ -18,13 +18,14 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} /> */}
         </Routes>
         
-        {/* <nav className="
+        <nav className="
             p-4 
-            bg-stone-600
+            bg-teal-600
             text-white 
             text-lg
             font-semibold
-            mt-4
+            mt-40
+            py-10
         ">
           
             <div className="
@@ -34,7 +35,11 @@ function App() {
                 flex-col
                 gap-2
             ">
-                <h2 >Website Template made by thankyouamour</h2>
+                <p >
+                  Check out my Website Template made
+                  <br></br>
+                  <span className='italic '>bythankyouamour</span>
+                </p>
 
                 <div className="
                   flex
@@ -62,7 +67,7 @@ function App() {
 
                 </div>
             </div>
-        </nav> */}
+        </nav>
 
       </div>
     </BrowserRouter>

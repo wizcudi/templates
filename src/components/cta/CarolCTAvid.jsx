@@ -11,15 +11,14 @@ export default function CarolCTAvid() {
             max-w-[1300px]
             relative
             overflow-hidden
-            min-h-[400px]
-             
+            min-h-[500px]
         '>
             <video
                 className='
                     object-cover
                     h-full
                     w-full
-                    
+                    min-h-[500px]
                     brightness-[.7]  
                         
                            
