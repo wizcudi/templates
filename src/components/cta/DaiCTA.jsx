@@ -3,6 +3,7 @@ import React from 'react'
 export default function DaiCTA() {
     return (
         <div
+            id='work'
             className='
                 py-20
                 px-8

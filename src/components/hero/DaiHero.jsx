@@ -2,6 +2,19 @@ import React from 'react'
 import HeroIMG from '../../assets/dai/UBD_Hero.png'
 
 export default function DaiHero() {
+
+    const handleClick = (e, href) => {
+        e.preventDefault();
+        // setIsOpen(false); // Close mobile menu
+        
+        const element = document.querySelector(href);
+        if (element) {
+            element.scrollIntoView({ 
+                behavior: 'smooth',
+            });
+        }
+    };
+
     return (
         <div
             className='
@@ -77,6 +90,7 @@ export default function DaiHero() {
                     </p>
                 </div>
                 <button
+                    onClick={(e) => handleClick(e, '#contact')}
                     className='
                         shadow-md
                         px-10

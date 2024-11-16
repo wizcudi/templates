@@ -3,26 +3,26 @@ import React from 'react'
 export default function DaiContact() {
     return (
         <div
+           id='contact'
             className='
-                flex
-                lg:flex-row
-                flex-col
-                py-20
+                sm:mt-10
+                grid
+                grid-cols-2
+                max-nine:grid-cols-1
+                py-16
                 px-8
-                max-six-hundred:pb-0
-                max-seven-hundred:px-0
-                max-seven-hundred:py-10
-                gap-10
-                max-w-[1400px]
+                gap-6
+                max-w-[1000px]
                 mx-auto
             '
         >
             <div
+                
                 className='
                     flex
                     flex-col
                     gap-2
-                    max-seven-hundred:px-6
+                    
                     text-dai-30-percent
                     mx-auto
                     max-w-xl
@@ -46,21 +46,16 @@ export default function DaiContact() {
                 </p>
             </div>
 
+            
+
             <form 
                 className='
-                    
                     space-y-8
-                    p-10
-                    mx-auto
-                    max-w-xl
-
-                    w-full
-                    lg:mt-0
-
-                    
-                    md:border-red-500
-
+                    p-8
                     bg-dai-30-percent
+                    max-nine:max-w-[580px]
+                    w-full
+                    mx-auto
                     
                 '
             >

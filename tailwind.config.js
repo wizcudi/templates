@@ -22,6 +22,7 @@ export default {
       },
       screens: {
         'max-nine-hundred': {'max': '910px'},
+        'max-nine': {'max': '900px'},
         'max-seven-hundred': {'max': '767.5px'},
         'max-seven': {'max': '700px'},
         'max-six-hundred': {'max': '600px'},

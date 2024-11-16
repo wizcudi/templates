@@ -5,6 +5,8 @@ export default function DaiFooter() {
     return (
         <div 
             className='
+                
+                
                 py-10
                 max-six-hundred:py-0
             '
@@ -18,7 +20,7 @@ export default function DaiFooter() {
                 mx-auto
                 py-20
 
-                rounded-xl
+                rounded-lg
                 border-2
                 border-dai-30-percent
 

@@ -5,6 +5,7 @@ import DaiCTA from '../components/cta/DaiCTA.jsx'
 import DaiTestimonial from './testimonials/DaiTestimonial.jsx'
 import DaiContact from './contact/DaiContact.jsx'
 import DaiFooter from './footer/DaiFooter.jsx'
+import DavNav from './navbar/DaiNav.jsx'
 
 export default function DaiWebsite() {
     return (
@@ -14,7 +15,8 @@ export default function DaiWebsite() {
 
                 
             '
-        >
+        >   
+            <DavNav />
             <DaiHero />
             <DaiAbout />
             <DaiCTA />

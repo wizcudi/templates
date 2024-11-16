@@ -4,6 +4,7 @@ import AboutIMG from '../../assets/dai/dai_about.png'
 export default function DaiAbout() {
     return (
         <div 
+            id='about'
             className='
                 bg-dai-60-percent
             '
