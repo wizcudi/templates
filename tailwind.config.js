@@ -8,9 +8,17 @@ export default {
   theme: { 
     extend: {
       colors: {
+        // Carol Dentist Colors
         'beige': '#f4f1ec', 
         'brand-orange': '#eb5e21',
         'brand-purple': '#3e3358',
+
+        // Dai Dentist Colors
+        'dai-60-percent':"#e5e5e5",
+        'dai-30-percent':"#14213d",
+        'dai-accent-one':"#fca311",
+        'dai-accent-two':"#94d2bd",
+        'dai-accent-three':"#f1e3d3",
       },
       screens: {
         'max-nine-hundred': {'max': '910px'},

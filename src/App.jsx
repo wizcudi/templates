@@ -9,6 +9,7 @@ function App() {
         h-screen
         min-h-screen
         bg-white
+        
       '>
 
         <Routes>
@@ -18,7 +19,7 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} /> */}
         </Routes>
         
-        <nav className="
+        {/* <nav className="
             p-4 
             bg-teal-600
             text-white 
@@ -67,7 +68,7 @@ function App() {
 
                 </div>
             </div>
-        </nav>
+        </nav> */}
 
       </div>
     </BrowserRouter>

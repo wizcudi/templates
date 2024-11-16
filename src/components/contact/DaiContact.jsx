@@ -4,12 +4,17 @@ export default function DaiContact() {
     return (
         <div
             className='
-                py-10
-                md:py-16
-
-                lg:flex
-                lg:px-10
-                lg:gap-10
+                flex
+                lg:flex-row
+                flex-col
+                py-20
+                px-8
+                max-six-hundred:pb-0
+                max-seven-hundred:px-0
+                max-seven-hundred:py-10
+                gap-10
+                max-w-[1400px]
+                mx-auto
             '
         >
             <div
@@ -17,7 +22,8 @@ export default function DaiContact() {
                     flex
                     flex-col
                     gap-2
-                    max-seven-hundred:p-6
+                    max-seven-hundred:px-6
+                    text-dai-30-percent
                     mx-auto
                     max-w-xl
                 '
@@ -28,12 +34,12 @@ export default function DaiContact() {
                         text-4xl
                         max-five-hundred:text-3x
                     '
-                >Ready to Transform Your Home?</h2>
+                >Transform Your Home!</h2>
                 <p
                     className='
-                        
                         text-base
-                        max-five-hundred:text-lg
+                        max-four-hundred:text-sm
+                        max-three-hundred:text-xs
                     '
                 >
                     From concept to completion, we're here to make your renovation dreams a reality. Contact us today for a free consultation and let’s start building your dream home!
@@ -48,18 +54,20 @@ export default function DaiContact() {
                     mx-auto
                     max-w-xl
 
-                    lg:w-full
+                    w-full
                     lg:mt-0
 
-                    md:mt-10
+                    
                     md:border-red-500
 
-                    bg-indigo-600
+                    bg-dai-30-percent
+                    
                 '
             >
 
                 <div className="sm:col-span-3">
-                    <label htmlFor="first-name" className=" text-xl font-semibold text-white">
+                    <label htmlFor="first-name" 
+                    className=" text-xl font-semibold text-dai-60-percent">
                         First name
                     </label>
                     <div className="mt-2">
@@ -74,7 +82,8 @@ export default function DaiContact() {
                 </div>
 
                 <div className="sm:col-span-3">
-                    <label htmlFor="last-name" className=" text-xl font-semibold text-white">
+                    <label htmlFor="last-name" 
+                    className=" text-xl font-semibold text-dai-60-percent">
                         Last name
                     </label>
                     <div className="mt-2">
@@ -89,7 +98,8 @@ export default function DaiContact() {
                 </div>
 
                 <div className="sm:col-span-4">
-                    <label htmlFor="email" className=" text-xl font-semibold text-white">
+                    <label htmlFor="email" 
+                    className=" text-xl font-semibold text-dai-60-percent">
                         Email address
                     </label>
                     <div className="mt-2">
@@ -104,7 +114,8 @@ export default function DaiContact() {
                 </div>
 
                 <div className="col-span-full">
-                    <label htmlFor="description" className=" text-xl font-semibold text-white">
+                    <label htmlFor="description" 
+                    className=" text-xl font-semibold text-dai-60-percent">
                         Description
                     </label>
                     <div className="mt-2">
@@ -122,19 +133,14 @@ export default function DaiContact() {
                     type="submit"
                     className="
                         rounded-md 
-                        bg-black
+                        bg-dai-accent-one
                         px-8
                         py-2
-                        text-sm 
+                        text-base 
                         font-semibold 
-                        text-white 
+                        text-dai-30-percent 
                         shadow-sm 
-                        hover:bg-indigo-500 
-                        focus-visible:outline 
-                        focus-visible:outline-2 
-                        focus-visible:outline-offset-2 
-                        focus-visible:outline-indigo-600
-                        
+                        hover:bg-dai-60-percent
                     "
                 >
                     Submit

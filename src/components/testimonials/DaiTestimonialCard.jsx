@@ -74,7 +74,7 @@ export default function DaiTestimonialCard({ testimonial }) {
 
     return (
         <div >
-            <div className="relative max-w-[1000px] mx-auto">
+            <div className="relative ">
                 {!isAtStart && (
                     <button
                         onClick={() => handleScroll('left')}
@@ -110,7 +110,7 @@ export default function DaiTestimonialCard({ testimonial }) {
             
             <div className="max-w-[1000px] mx-auto mt-6">
                 <h2 className="italic text-2xl font-semibold">{testimonial.name}</h2>
-                <div className="h-0.5 w-full bg-black mt-2 mb-2"></div>
+                <div className="h-0.5 w-full bg-dai-accent-one mt-2 mb-2"></div>
                 <p>{testimonial.text}</p>
             </div>
         </div>

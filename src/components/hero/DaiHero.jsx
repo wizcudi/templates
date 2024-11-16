@@ -6,7 +6,9 @@ export default function DaiHero() {
         <div
             className='
                 flex
-                max-h-[500px]
+                
+                min-h-[500px]
+                max-h-[550px]
                 relative
             '
         >
@@ -26,19 +28,15 @@ export default function DaiHero() {
                     transform
                     -translate-x-1/2
                     -translate-y-1/2
-                    text-center
+                    
 
                     flex
                     flex-col
                     gap-4
                     
                     w-[90%]
-
                     max-w-[800px]
-
-                    max-five-hundred:gap-2
-
-                    max-three-hundred:w-[95%]
+                    max-five-hundred:w-[95%]
                 '
                 
             >
@@ -48,15 +46,12 @@ export default function DaiHero() {
                         flex-col
                         sm:gap-4
                         gap-2
-                        py-8
-                        p-4
-                        bg-slate-200/75
-                        
+                        py-10
+                        px-4
+                        bg-dai-60-percent/75
+                        text-dai-30-percent
+                        text-center
                         rounded
-
-                        max-five-hundred:py-5
-                        max-four-hundred:py-4
-                        max-four-hundred:gap-1
                     '
                 >
                     <h1
@@ -67,20 +62,15 @@ export default function DaiHero() {
                             
                             max-seven:text-5xl
                             max-six-hundred:text-4xl
-                            max-five-hundred:text-3xl
-                            max-four-hundred:text-2xl
+                            max-three-hundred:text-3xl
                         '
                     >Utah Design & Build</h1>
                     <p
                         className='
-
                             font-semibold
-                            text-3xl
-                            max-seven:text-2xl
-                            max-six-hundred:text-xl
+                            text-2xl
                             max-five-hundred:text-base
-                            max-four-hundred:text-sm
-                            max-three-hundred:text-xs
+                            
                         '
                     >
                         From modern makeovers to timeless renovations, our experts bring your vision to life.
@@ -91,8 +81,8 @@ export default function DaiHero() {
                         shadow-md
                         px-10
                         py-2
-                        bg-[#27327f]
-                        text-white
+                        bg-dai-30-percent
+                        text-dai-60-percent
                         font-semibold
                         text-lg
                         uppercase

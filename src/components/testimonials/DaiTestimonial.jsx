@@ -13,7 +13,7 @@ const testimonialData = [
     {
         name: "Andrew Shultz",
         text: "Daishaun and Tony transformed our outdated kitchen into a modern masterpiece. Their attention to detail and commitment to quality made the whole process stress-free. We couldn't be happier with the results!",
-        bgColor: "bg-red-300",
+        bgColor: "bg-dai-60-percent",
         images: [
             
             Renovation2, 
@@ -26,7 +26,7 @@ const testimonialData = [
     {
         name: "Will Doe",
         text: "Outstanding work on our bathroom renovation! The team's expertise and professionalism exceeded our expectations. They completed the project on time and within budget.",
-        bgColor: "bg-blue-300",
+        bgColor: "bg-dai-accent-two",
         images: [
             
             Renovation4, 
@@ -37,7 +37,7 @@ const testimonialData = [
     {
         name: "Jill Doe",
         text: "Outstanding work on our bathroom renovation! The team's expertise and professionalism exceeded our expectations. They completed the project on time and within budget.",
-        bgColor: "bg-green-300",
+        bgColor: "bg-dai-accent-three",
         images: [
             Renovation1, 
             Renovation2, 
@@ -69,26 +69,44 @@ export default function DaiTestimonial() {
             ${testimonialData[currentIndex].bgColor}
             transition-colors
             duration-300
-            p-10
+            py-20
+            px-8
+            text-dai-30-percent
+            max-w-[800px] 
+            mx-auto
+            md:rounded-md
         `}>
-            <DaiTestimonialCard testimonial={testimonialData[currentIndex]} />
+            <DaiTestimonialCard 
+                testimonial={testimonialData[currentIndex]} 
+                
+            />
 
             
 
-            <div className="flex justify-evenly max-w-xl w-full mx-auto ">
+            <div 
+                className="
+                    flex 
+                    justify-evenly 
+                    max-w-xl 
+                    w-full 
+                    mx-auto 
+                "
+            >
                 <button
                     onClick={handlePrevious}
                     className="
                         px-6 
                         py-2 
-                        bg-black/40 
-                        text-white 
-                        rounded-full 
-                        hover:bg-black/60 
+                        
                         transition
                         flex
                         items-center
                         gap-2
+
+                        bg-dai-30-percent
+                        hover:bg-dai-30-percent/75
+                        text-dai-60-percent
+                        rounded-md
                     "
                 >
                     <FaChevronLeft />
@@ -100,14 +118,16 @@ export default function DaiTestimonial() {
                     className="
                         px-6 
                         py-2 
-                        bg-black/40 
-                        text-white 
-                        rounded-full 
-                        hover:bg-black/60 
+                        
                         transition
                         flex
                         items-center
                         gap-2
+
+                        bg-dai-30-percent
+                        hover:bg-dai-30-percent/75
+                        text-dai-60-percent
+                        rounded-md
                     "
                 >
                     <span>Next</span>
