@@ -11,7 +11,13 @@ import CarolFooter from './footer/CarolFooter.jsx'
 
 export default function CarolDentist() {
     return (
-        <div>
+        <div
+            className='
+                w-full
+                mx-auto
+                max-w-[1300px]
+            '
+        >
             <CarolHero />
             <CarolAbout />
             <CarolService />

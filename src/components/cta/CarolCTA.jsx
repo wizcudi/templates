@@ -36,15 +36,15 @@ export default function CarolCTA() {
 
             '>
                 <div>
-                <img 
-                    className='
-                        w-[50px]
-                        md:w-[70px]
-                        lg:w-[100px]
-                    '
-                    src={CarolAssest1} 
-                    alt="Carol Logo" 
-                />
+                    <img 
+                        className='
+                            w-[50px]
+                            md:w-[70px]
+                            lg:w-[100px]
+                        '
+                        src={CarolAssest1} 
+                        alt="Carol Logo" 
+                    />
                 </div>  
                 <h2 className='
                     text-2xl

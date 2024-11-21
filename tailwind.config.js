@@ -29,8 +29,6 @@ export default {
         'max-five-hundred': {'max': '500px'},
         'max-four-hundred': {'max': '400px'},
         'max-three-hundred': {'max': '350px'},
-
-        
       }
     },
   },

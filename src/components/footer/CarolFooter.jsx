@@ -15,22 +15,22 @@ export default function CarolFooter() {
             max-w-[1300px]
             gap-10
             gap-y-14
-            p-10
+            py-14
+            px-5
         '>
             <h2 className='
-                text-4xl
+                text-3xl
             '><span className='
                 
                 border-b-2
                 border-brand-purple
-            '>Sterriton <br></br> Branch  </span></h2>
+            '>Dr. Elvira <br></br> Montanez  </span></h2>
             <div className='
                 flex
                 flex-col
                 md:flex-row
                 justify-between
-                gap-6
-
+                gap-x-8 gap-y-14
                 
             '>
                 <div>
@@ -46,7 +46,7 @@ export default function CarolFooter() {
                     gap-4
                     
                 '>
-                    <p className='text-xl'>LOCATION</p>
+                    <p className='text-2xl'>LOCATION</p>
                     <p className='
                         font-semibold
                     '>123 Anywhere St. <br></br> Any City, ST 12345</p>
@@ -61,7 +61,7 @@ export default function CarolFooter() {
                     
                 '>
                     <p className='
-                        text-xl
+                        text-2xl
                         uppercase
                     '>Clinic Hours</p>
                     

@@ -38,9 +38,10 @@ export default function CarolTestimonial() {
             <div className='
                 flex
                 flex-col
-                sm:flex-row
+                md:flex-row
                 gap-10
                 gap-y-20
+                text-base
             '>
                 <div className='
                     
@@ -59,7 +60,7 @@ export default function CarolTestimonial() {
                     <p>
                     Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.
                     </p>
-                    <p>Casper Berkley</p>
+                    <p className='italic font-semibold'>Casper Berkley</p>
                 </div>
                 <div className='
                     
@@ -78,7 +79,7 @@ export default function CarolTestimonial() {
                     <p>
                     Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.
                     </p>
-                    <p>Larissa Charter</p>
+                    <p className='italic font-semibold'>Larissa Charter</p>
                 </div>
                 <div className='
                     
@@ -97,7 +98,7 @@ export default function CarolTestimonial() {
                     <p>
                     Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable.
                     </p>
-                    <p>Kiara Austen</p>
+                    <p className='italic font-semibold'>Kiara Austen</p>
                 </div>
             </div>
         </div>

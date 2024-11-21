@@ -4,23 +4,12 @@ import Carol from '../../assets/caroldental/CarolFront.png'
 export default function CarolHero() {
     return (
         <div className='
-            
-            flex
-            w-full
-            max-w-[1300px]
+            flex  w-full max-w-[1300px] 
             h-[880px]
-
-            max-three-hundred:h-[650px]
-
-            max-four-hundred:h-[715px]
-
-            max-five-hundred:h-[760px]
-
-            md:max-h-[475px]
-
-            lg:max-h-[535px]
+            
+            max-five-hundred:h-[786px]
+            md:max-h-[475px] lg:max-h-[535px]
             bg-beige
-
             relative
         '>
             <div className='
@@ -56,21 +45,16 @@ export default function CarolHero() {
                     font-bold
                     text-4xl
                     text-brand-purple
-                    max-four-hundred:text-2xl
                 '>Dr. Elvira Montanez</h1>
                 <p className='
                     font-semibold
                     text-2xl
                     uppercase
-                    max-four-hundred:text-lg
-                    max-five-hundred:text-xl
                     text-brand-purple
                 '>Dentist</p>
                 <p className='
                     text-brand-purple
-                    text-md
-                    max-four-hundred:text-sm
-                    md:text-lg 
+                    text-base
                 '>Dr. Montanez received her Doctorate of Dental Medicine from De Loureigh University where she currently teaches part time. She has 13 years of experience and was named one of Bockford's Top Dentists in 2021 and 2022.</p>
                 <button className='
                     max-w-60

@@ -11,7 +11,7 @@ export default function CarolService() {
             w-full
             max-w-[1300px]
             gap-8
-            p-10
+            p-5
             pt-15
             pb-15
             bg-beige

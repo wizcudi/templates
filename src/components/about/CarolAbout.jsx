@@ -12,7 +12,7 @@ export default function CarolAbout() {
                 flex-col
                 w-full
                 max-w-[1300px]
-                p-10
+                p-5
                 pt-15
                 pb-15
                 gap-7
@@ -33,7 +33,7 @@ export default function CarolAbout() {
                 <span className='border-b-2 border-brand-purple'>Dr. Elvira Montanez</span>
                 </h2>
                 <p className='
-                    text-lg
+                    text-base
                 '>Write a paragraph that talks about your dental practice here. Convince your prospective clients to choose you and your clinic for their dental needs by talking about your philosophy or your background.</p>
             </div>
 
@@ -66,11 +66,11 @@ export default function CarolAbout() {
                         before:-left-6
                     '>
                         <p className='
-                            text-xl
+                            text-lg
                             font-bold
                         '>Special Interests</p>
                         <p className='
-                            
+                            text-base
                         '>Support your statements above with two convincing arguments on why you're the best choice. Flesh it out in these short paragraph columns.</p>
                     </li>
                     <li className='
@@ -86,7 +86,7 @@ export default function CarolAbout() {
                             text-xl
                         '>Associations</p>
                         <p className='
-                            
+                            text-base
                         '>Support your statements above with two convincing arguments on why you're the best choice. Flesh it out in these short paragraph columns.</p>
                     </li>
                 </ol>
